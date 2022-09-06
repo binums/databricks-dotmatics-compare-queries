@@ -59,7 +59,7 @@ with open("databricks-result.py", "w") as dbf:
 
 
 with jaydebeapi.connect("oracle.jdbc.driver.OracleDriver",
-                        "jdbc:oracle:thin:svc_prod_databricks_cider/Mxo_UsQ8Z8yM@SAGE-ORACLE.corp.com:1521:PROD",
+                        "jdbc:oracle:thin:<username>/<password>@SAGE-ORACLE.corp.com:1521:PROD",
                         {},
 						["DatabricksJDBC42.jar","ojdbc8.jar"]) as dotmaticsConn:
 	with dotmaticsConn.cursor() as dotmaticsCurs:
